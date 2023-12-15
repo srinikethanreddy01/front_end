@@ -9,7 +9,7 @@ import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import  {Toaster} from 'react-hot-toast'
 
 
-axios.defaults.baseURL='http://localhost:8000'
+axios.defaults.baseURL='https://backend-ou2k.onrender.com'
 axios.defaults.withCredentials=true
 function App() {
   return (
