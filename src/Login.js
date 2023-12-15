@@ -22,7 +22,7 @@ const Login = () => {
     
 
     try{
-      
+      console.log("hello");
       const {data}=await axios.post('/Login',{email,password});
       console.log(data)
       
