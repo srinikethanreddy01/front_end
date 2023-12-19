@@ -46,7 +46,7 @@ const SignUp = () => {
 
   }
   return (
-    <>
+    <div class="login-container">
       <h1 style={{marginTop:"10%", textAlign:  "center"}}>SignUp</h1>
     
       
@@ -75,7 +75,7 @@ const SignUp = () => {
         
 
     </form>
-    </>
+    </div>
   )
 }
 
