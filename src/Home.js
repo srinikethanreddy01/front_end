@@ -27,7 +27,7 @@ function Home() {
                 };
 
 
-                axios.post("https://flask-production-8a9b.up.railway.app/predict",requestData, {
+                axios.post(process.env.FLASK_URL,requestData, {
                     withCredentials: true,
                 })
                     .then((response) => {
