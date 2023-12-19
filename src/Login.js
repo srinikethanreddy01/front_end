@@ -84,7 +84,7 @@ const Login = () => {
   // </div>
      
     <div className="login-container">
-      <h1 style={{marginTop:"10%", textAlign:  "center"}}>LOGIN</h1>
+      <h1 style={{marginTop:"5%", textAlign:  "center"}}>LOGIN</h1>
     
       
     
