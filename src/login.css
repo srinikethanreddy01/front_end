@@ -1,4 +1,4 @@
-form{
+/* form{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,3 +56,72 @@ input::placeholder{
     padding: 1%;
 }
 
+ */
+
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container styling */
+  .login-container {
+    margin: 0;
+    padding: 0;
+    background-image: url("https://c1.wallpaperflare.com/preview/11/461/86/blood-cells-red-medical.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  /* Form styling */
+  form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjusted width */
+    margin:20px;
+    padding: 30px;
+
+    text-align: center;
+
+  }
+  
+  /* Labels styling */
+  label {
+    font-size: 20px;
+    color: white;
+    display: block;
+    margin: 10px;
+    text-align: left;
+  }
+  
+  /* Inputs styling */
+  input {
+    width: 100%; /* Adjusted width */
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Buttons styling */
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    margin:20px 30px;
+     /* Add margin-bottom to create space between buttons */
+  }
+  
+
+  
+  
