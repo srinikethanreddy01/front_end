@@ -53,60 +53,60 @@ const Login = () => {
     
   }
   return (
-    <div className="login-container">
+  //   <div className="login-container">
     
 
-    <form onSubmit={loginUser}>
-    <h1>LOGIN</h1>
-      <label htmlFor="email">Email</label>
-      <input
-        id="email"
-        type="email"
-        placeholder="Username"
-        value={data.email}
-        onChange={(e) => setData({ ...data, email: e.target.value })}
-      />
+  //   <form onSubmit={loginUser}>
+  //   <h1>LOGIN</h1>
+  //     <label htmlFor="email">Email</label>
+  //     <input
+  //       id="email"
+  //       type="email"
+  //       placeholder="Username"
+  //       value={data.email}
+  //       onChange={(e) => setData({ ...data, email: e.target.value })}
+  //     />
 
-      <label htmlFor="password">Password</label>
-      <input
-        id="password"
-        type="password"
-        placeholder="password"
-        value={data.password}
-        onChange={(e) => setData({ ...data, password: e.target.value })}
-      />
+  //     <label htmlFor="password">Password</label>
+  //     <input
+  //       id="password"
+  //       type="password"
+  //       placeholder="password"
+  //       value={data.password}
+  //       onChange={(e) => setData({ ...data, password: e.target.value })}
+  //     />
 
-      <button type="submit">Submit</button>
-      <Link to="/signup">
-        <button>SignUp</button>
-      </Link>
-    </form>
-  </div>
+  //     <button type="submit">Submit</button>
+  //     <Link to="/signup">
+  //       <button>SignUp</button>
+  //     </Link>
+  //   </form>
+  // </div>
      
-    // <>
-    //   <h1 style={{marginTop:"10%", textAlign:  "center"}}>LOGIN</h1>
+    <>
+      <h1 style={{marginTop:"10%", textAlign:  "center"}}>LOGIN</h1>
     
       
     
-    // <form onSubmit={loginUser}>
+    <form onSubmit={loginUser}>
         
 
-    //   <label htmlFor="email">Email</label>
-    //   <input id="email" type="email" placeholder="Username" value={data.email} onChange={(e)=>setData({...data,email:e.target.value})} />
+      <label htmlFor="email">Email</label>
+      <input id="email" type="email" placeholder="Username" value={data.email} onChange={(e)=>setData({...data,email:e.target.value})} />
       
       
   
   
-    //   <label htmlFor="password" >Password</label>
-    //   <input id="password" type="password" placeholder="password" value={data.password} onChange={(e)=>setData({...data,password:e.target.value})}/>
+      <label htmlFor="password" >Password</label>
+      <input id="password" type="password" placeholder="password" value={data.password} onChange={(e)=>setData({...data,password:e.target.value})}/>
   
-    //   <button type="submit">Submit</button>
-    //   <Link to="/signup"><button>SignUp</button></Link>
+      <button type="submit">Submit</button>
+      <Link to="/signup"><button>SignUp</button></Link>
   
         
 
-    // </form>
-    // </>
+    </form>
+    </>
   )
 } 
 
