@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     background-image: url("https://wallpapers.com/images/hd/doctor-with-purple-stethoscope-hd-medical-i8eodw1rhfq6r353.jpg");
+    
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -19,6 +20,11 @@
     justify-content: center;
     color: white;
     overflow: hidden;
+    /* Add a fallback background color for browsers that don't support backdrop-filter */
+    background-color: rgba(0, 0, 0, 0.5);
+
+  /* Add blur effect using backdrop-filter */
+    backdrop-filter: blur(10px);
   }
   
   /* Form styling */
