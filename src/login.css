@@ -9,16 +9,16 @@
   .login-container {
     margin: 0;
     padding: 0;
-/*     background-image: url("https://c1.wallpaperflare.com/preview/11/461/86/blood-cells-red-medical.jpg"); */
+    background-image: url("https://c1.wallpaperflare.com/preview/11/461/86/blood-cells-red-medical.jpg");
     background-size: cover;
     background-position: center;
-/*     height: 100vh; */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-/*     overflow: hidden; */
+    overflow: hidden;
   }
   
   /* Form styling */
