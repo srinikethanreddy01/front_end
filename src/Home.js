@@ -107,8 +107,12 @@ function Home() {
 
             if (response.ok) {
             console.log("Image uploaded successfully!");
-            const data = await response.text();
-            setResponseMessage(data)
+            const data = await response.json();
+            const predictedValue = data["Predicted"];
+            setResponseMessage(predictedValue);
+
+            // const data = await response.text();
+            // setResponseMessage(data)
             } else {
             console.error("Image upload failed.");
             }
