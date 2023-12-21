@@ -128,9 +128,9 @@ function Home() {
     };
 
     return (
-        <div>
+        <div style={{ textAlign: 'center' }}>
         <h1>Upload Image</h1>
-        <div>
+        <div >
                 {imageUrl && <img src={imageUrl} alt='Selected Image' style={{ width:'300px',height:'300px'}} />}
 
 
