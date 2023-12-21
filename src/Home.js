@@ -113,7 +113,7 @@ function Home() {
             console.log("Image uploaded successfully!");
             const data = await response.json();
             const predictedValue = data["Predicted"];
-            setResponseMessage(predictedValue);
+            setPrediction(predictedValue);
 
             // const data = await response.text();
             // setResponseMessage(data)
@@ -130,49 +130,39 @@ function Home() {
     };
 
     return (
-      <div style={{ textAlign: 'center', margin: '20px' }}>
-<div style={{ marginTop: '20px',}}>
-    {imageUrl && <img src={imageUrl} alt='Selected Image' style={{ width: '300px', height: '300px',border:'1px solid radius',borderRadius: '5px' }} />}
-  </div>
-    
-  <form onSubmit={handlesubmit} style={{ display: 'inline-block', textAlign: 'left' }}>
-    <label htmlFor='image'>Upload image</label>
-    <input type='file' id="image" onChange={handleImageChange}></input>
-    <button type="submit">Submit</button>
-  </form>
-  
-  
+     
+        <div style={{ textAlign: 'center' }}>
+        <div style={{ marginTop:'20px'>
+                {imageUrl && <img src={imageUrl} alt='Selected Image' style={{ width:'300px',height:'300px',,border:'1px solid black',borderRadius: '5px'}} />}
 
-  
-    <div style={{display:'flex',justifyContent:'center'}}>
-        <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',height:'auto' }}>
-            <p>{responseMessage}</p>
-            // {prediction}
-            {/* <h2>target</h2>
-                {target} */}
+
         </div>
-        <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',marginLeft:'5%',height:'auto'}}>
-            <p>{responseMessage}</p>
-            // {prediction}
-            {/* <h2>target</h2>
-                {target} */}
-        </div>
-    </div>
-
-</div>
-
-        // <div style={{ textAlign: 'center' }}>
-        // <h1>Upload Image</h1>
-        // <div >
-        //         {imageUrl && <img src={imageUrl} alt='Selected Image' style={{ width:'300px',height:'300px'}} />}
-
-
-        // </div>
             
+        <h1>Upload Image</h1>
+        <form onSubmit={fileUploadHandler} style={{ display: 'inline-block', textAlign: 'left' }}>
+          <label htmlFor='image'>Upload image</label>
+          <input type='file' id="image" onChange={fileSelectHandler}></input>
+          <button type="submit">Submit</button>
+        </form>
+        <div style={{display:'flex',justifyContent:'center'}}>
+            <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',height:'auto' }}>
+                <p>Prediction</p>
+                {prediction}
+                {/* <h2>target</h2>
+                    {target} */}
+            </div>
+            <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',marginLeft:'5%',height:'auto'}}>
+                <p>Target</p>
+                {prediction}
+                {/* <h2>target</h2>
+                    {target} */}
+            </div>
+        </div>
+  
         // <input type="file" onChange={fileSelectHandler}></input>
         // <button onClick={fileUploadHandler}>Generate</button>
         // <h2>{responseMessage}</h2>
-        // </div>
+        </div>
     );
     // const [image, setImage] = useState(null);
     // const [prediction, setPrediction] = useState(null);
