@@ -128,18 +128,49 @@ function Home() {
     };
 
     return (
-        <div style={{ textAlign: 'center' }}>
-        <h1>Upload Image</h1>
-        <div >
-                {imageUrl && <img src={imageUrl} alt='Selected Image' style={{ width:'300px',height:'300px'}} />}
+      <div style={{ textAlign: 'center', margin: '20px' }}>
+<div style={{ marginTop: '20px',}}>
+    {imageUrl && <img src={imageUrl} alt='Selected Image' style={{ width: '300px', height: '300px',border:'1px solid radius',borderRadius: '5px' }} />}
+  </div>
+    
+  <form onSubmit={handlesubmit} style={{ display: 'inline-block', textAlign: 'left' }}>
+    <label htmlFor='image'>Upload image</label>
+    <input type='file' id="image" onChange={handleImageChange}></input>
+    <button type="submit">Submit</button>
+  </form>
+  
+  
 
-
+  {/* {prediction ? ( */}
+    <div style={{display:'flex',justifyContent:'center'}}>
+        <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',height:'auto' }}>
+            <p>Prediction</p>
+            {prediction}
+            {/* <h2>target</h2>
+                {target} */}
         </div>
+        <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',marginLeft:'5%',height:'auto'}}>
+            <p>Target</p>
+            {prediction}
+            {/* <h2>target</h2>
+                {target} */}
+        </div>
+    </div>
+{/* //   ) : null} */}
+</div>
+
+        // <div style={{ textAlign: 'center' }}>
+        // <h1>Upload Image</h1>
+        // <div >
+        //         {imageUrl && <img src={imageUrl} alt='Selected Image' style={{ width:'300px',height:'300px'}} />}
+
+
+        // </div>
             
-        <input type="file" onChange={fileSelectHandler}></input>
-        <button onClick={fileUploadHandler}>Generate</button>
-        <h2>{responseMessage}</h2>
-        </div>
+        // <input type="file" onChange={fileSelectHandler}></input>
+        // <button onClick={fileUploadHandler}>Generate</button>
+        // <h2>{responseMessage}</h2>
+        // </div>
     );
     // const [image, setImage] = useState(null);
     // const [prediction, setPrediction] = useState(null);
