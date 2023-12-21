@@ -132,7 +132,7 @@ function Home() {
     return (
      
         <div style={{ textAlign: 'center' }}>
-        <div style={{ marginTop:'20px'>
+        <div style={{ marginTop:'20px'}>
                 {imageUrl && <img src={imageUrl} alt='Selected Image' style={{ width:'300px',height:'300px',,border:'1px solid black',borderRadius: '5px'}} />}
 
 
