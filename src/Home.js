@@ -91,6 +91,8 @@ function Home() {
     const [imgFile, setImgFile] = useState(null);
     const [responseMessage,setResponseMessage] = useState("-----")
     const [imageUrl, setImageUrl] = useState(null);
+    const [prediction, setPrediction] = useState(null);
+    const [target, setTarget] = useState(null);
 
     const fileSelectHandler = (event) => {
         setImgFile(event.target.files[0]);
@@ -141,22 +143,22 @@ function Home() {
   
   
 
-  {/* {prediction ? ( */}
+  
     <div style={{display:'flex',justifyContent:'center'}}>
         <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',height:'auto' }}>
-            <p>Prediction</p>
-            {prediction}
+            <p>{responseMessage}</p>
+            // {prediction}
             {/* <h2>target</h2>
                 {target} */}
         </div>
         <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',marginLeft:'5%',height:'auto'}}>
-            <p>Target</p>
-            {prediction}
+            <p>{responseMessage}</p>
+            // {prediction}
             {/* <h2>target</h2>
                 {target} */}
         </div>
     </div>
-{/* //   ) : null} */}
+
 </div>
 
         // <div style={{ textAlign: 'center' }}>
