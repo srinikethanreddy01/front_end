@@ -163,9 +163,7 @@ function Home() {
             </div>
         </div>
   
-        // <input type="file" onChange={fileSelectHandler}></input>
-        // <button onClick={fileUploadHandler}>Generate</button>
-        // <h2>{responseMessage}</h2>
+       
         </div>
     );
     // const [image, setImage] = useState(null);
