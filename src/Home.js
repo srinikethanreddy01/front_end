@@ -89,7 +89,7 @@ import axios from 'axios'
 
 function Home() {
     const [imgFile, setImgFile] = useState(null);
-    const [responseMessage,setResponseMessage] = useState("-----")
+    const [responseMessage,setResponseMessage] = useState("-----");
     const [imageUrl, setImageUrl] = useState(null);
     const [prediction, setPrediction] = useState(null);
     const [target, setTarget] = useState(null);
