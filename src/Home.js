@@ -91,8 +91,8 @@ function Home() {
     const [imgFile, setImgFile] = useState(null);
     const [responseMessage,setResponseMessage] = useState("-----");
     const [imageUrl, setImageUrl] = useState(null);
-    const [prediction, setPrediction] = useState(null);
-    const [target, setTarget] = useState(null);
+    const [prediction, setPrediction] = useState("---");
+    const [target, setTarget] = useState("");
     const [b1,setb1]=useState(0);
     const [b2,setb2]=useState(0);
     const [b3,setb3]=useState(0);
