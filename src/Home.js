@@ -166,13 +166,13 @@ function Home() {
           <button type="submit">Submit</button>
         </form>
         <div style={{display:'flex',justifyContent:'center'}}>
-{target &&(
+// {target &&(
             <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',height:'auto' }}>
                 <p>target</p>
                 {target}
                 {/* <h2>target</h2>
                     {target} */}
-            </div>)}
+            </div>
             <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',marginLeft:'5%',height:'auto'}}>
                 <p>{prediction}</p>
                 
