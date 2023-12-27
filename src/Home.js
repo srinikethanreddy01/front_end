@@ -93,10 +93,18 @@ function Home() {
     const [imageUrl, setImageUrl] = useState(null);
     const [prediction, setPrediction] = useState(null);
     const [target, setTarget] = useState(null);
+    const [b1,setb1]=useState(0);
+    const [b2,setb2]=useState(0);
+    const [b3,setb3]=useState(0);
+    const [b4,setb4]=useState(0);
+    const [cos,setcos]=useState(0);
 
     const fileSelectHandler = (event) => {
         setImgFile(event.target.files[0]);
         setImageUrl(URL.createObjectURL(event.target.files[0]));
+        setPrediction("Generated Report");
+        setTarget("");
+      
     };
     const fileUploadHandler = async () => {
         if (imgFile) {
@@ -113,7 +121,20 @@ function Home() {
             console.log("Image uploaded successfully!");
             const data = await response.json();
             const predictedValue = data["Predicted"];
+            const targetvalue=data["Caption"];
+            const tb1=data["b1"];
+            const tb2=data["b2"];
+            const tb3=data["b3"];
+            const tb4=data["b4"];
+            const tcos=data["cos"];
             setPrediction(predictedValue);
+            setTarget(targetValue);
+            setb1(tb1);
+            setb2(tb2);
+            setb3(tb3);
+            setb4(tb4);
+            setcos(tcos);
+              
 
             // const data = await response.text();
             // setResponseMessage(data)
@@ -145,14 +166,15 @@ function Home() {
           <button type="submit">Submit</button>
         </form>
         <div style={{display:'flex',justifyContent:'center'}}>
+{target &&(
             <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',height:'auto' }}>
-                <p>Prediction</p>
-                {prediction}
+                <p>target</p>
+                {target}
                 {/* <h2>target</h2>
                     {target} */}
-            </div>
+            </div>)}
             <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',marginLeft:'5%',height:'auto'}}>
-                <p>Target</p>
+                <p>Prediction</p>
                 {prediction}
                 {/* <h2>target</h2>
                     {target} */}
