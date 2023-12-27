@@ -121,7 +121,7 @@ function Home() {
             console.log("Image uploaded successfully!");
             const data = await response.json();
             const predictedValue = data["Predicted"];
-            const targetvalue=data["Caption"];
+            const targetValue=data["Caption"];
             const tb1=data["b1"];
             const tb2=data["b2"];
             const tb3=data["b3"];
