@@ -174,8 +174,8 @@ function Home() {
                     {target} */}
             </div>)}
             <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',marginLeft:'5%',height:'auto'}}>
-                <p>Prediction</p>
-                {prediction}
+                <p>{prediction}</p>
+                
                 {/* <h2>target</h2>
                     {target} */}
             </div>
