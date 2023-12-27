@@ -166,7 +166,7 @@ function Home() {
           <button type="submit">Submit</button>
         </form>
         <div style={{display:'flex',justifyContent:'center'}}>
-// {target &&(
+
             <div className='output' style={{ marginTop: '20px', padding: '10px', border: '1px solid #ccc', borderRadius: '5px',width:'40%',height:'auto' }}>
                 <p>target</p>
                 {target}
