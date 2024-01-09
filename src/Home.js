@@ -128,7 +128,7 @@ function Home() {
         {target && (
           <div id="output2">
             {/* Display the 'target' value in this container */}
-            Target: {target}
+            Predicted: {responseMessage}
           </div>
         )}
 
