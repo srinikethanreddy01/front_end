@@ -133,11 +133,11 @@ function Home() {
         )}
 
 
-        // {target && (
-        //   <div id="scores">
-        //   <p id="bl1">Bleu 1:&nbsp; </p> {b1} &emsp; <p id="bl2">Bleu 2: &nbsp; </p> {b2}&emsp;   <p id="bl3">Bleu 3:&nbsp;  </p> {b3}&emsp;   <p id="bl4">Bleu 4:&nbsp;  </p> {b4}&emsp;   <p id="cos">Cosine Similarity:&nbsp;  </p> {cos}
-        //   </div>
-        // )}
+        {target && (
+          <div id="scores">
+          // <p id="bl1">Bleu 1:&nbsp; </p> {b1} &emsp; <p id="bl2">Bleu 2: &nbsp; </p> {b2}&emsp;   <p id="bl3">Bleu 3:&nbsp;  </p> {b3}&emsp;   <p id="bl4">Bleu 4:&nbsp;  </p> {b4}&emsp;   <p id="cos">Cosine Similarity:&nbsp;  </p> {cos}
+          </div>
+        )}
 
       </div>
     </div>
